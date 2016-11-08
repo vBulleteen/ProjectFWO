@@ -1,0 +1,417 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Loved+by+the+King';
+html {
+    overflow: hidden;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+:focus {
+    outline: 0;
+    border: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-media-controls-panel {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
+*::--webkit-media-controls-play-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 auto 0 0;
+    line-height: 1.4;
+}
+
+svg {
+    z-index: 4;
+    position: absolute;
+    min-width: 28rem;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li.active a {
+    color: white;
+}
+
+li a:hover {
+    color: white;
+}
+
+p {
+    margin: 0 auto 0 0;
+    line-height: 1.2;
+}
+
+i {
+    color: grey;
+}
+
+#body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+}
+
+.label {
+    margin: 1.5rem;
+    max-width: 400px;
+    z-index: 4;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.toplabel {
+    z-index: 3;
+    position: relative;
+    bottom: auto;
+    right: 0px;
+    text-align: right;
+    font-size: 1.2rem;
+    top: 0px;
+}
+
+#navigation {
+    margin: 1.5rem;
+    right: 0px;
+}
+
+#logo {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    width: 15rem;
+    z-index: 3;
+}
+
+.info {
+    padding-top: 1%;
+    color: grey;
+    font-size: 1.6rem;
+    /*font-style: italic;*/
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: grey;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a.blank,
+a.blank:visited,
+a.blank:active,
+a.blank:hover {
+    color: inherit!important;
+    font-weight: inherit!important;
+    text-decoration: inherit!important;
+}
+
+video {
+    opacity: 0.4;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+}
+
+.active video {
+    opacity: 1.0;
+}
+
+img {
+    opacity: 0.4;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+}
+
+.active img {
+    opacity: 1.0;
+}
+
+text {
+    font-family: 'Loved by the King', cursive;
+    font-size: 45px;
+    fill: grey;
+    -webkit-clip-path: inset(0 100% 0 0);
+    -moz-clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
+    /*opacity: 0.4;*/
+    -webkit-transition: 0.3s ease-out 0.5s;
+    -moz-transition: 0.3s ease-out 0.5s;
+    -ms-transition: 0.3s ease-out 0.5s;
+    -o-transition: 0.3s ease-out 0.5s;
+    transition: 0.3s ease-out 0.5s;
+    /*-webkit-transform: translate(-0.5em,0);
+    -moz-transform: translate(-0.5em,0);
+    -o-transform: translate(-0.5em,0);
+    -ms-transform: translate(-0.5em,0);
+    transform: translate(-0.5em,0);*/
+}
+
+.active text {
+    /*-webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);*/
+    -webkit-clip-path: inset(0 0 0 0);
+    -moz-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+}
+
+.fill {
+    position: absolute;
+    z-index: 0;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.fill.left {
+    /*left:0;*/
+    /*align-self: flex-start;*/
+}
+
+.fill.right {
+    /*right:0;*/
+    /*align-self: flex-end;*/
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid white;
+    box-sizing: border-box;
+    /*scroll-snap-type: mandatory;*/
+    /*scroll-snap-align:none start;*/
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fill {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fill {
+        height: 100%;
+        width: auto;
+    }
+    .label {
+        /*text-align: center;*/
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+
+/*SECTIONS*/
+
+#intro,
+#intro g {
+    color: white;
+    fill: white;
+}
+
+#intro a,
+#intro a:visited,
+#intro a:active,
+#intro text {
+    color: #3CE6C6;
+    fill: #3CE6C6;
+}
+
+#intro a:hover {
+    color: white;
+}
+
+#made li {
+    color: grey;
+}
+
+#bosch,
+#bosch g {
+    color: white;
+    fill: white;
+}
+
+#bosch a,
+#bosch a:visited,
+#bosch a:active,
+#bosch text {
+    color: rgb(255, 215, 0);
+    fill: rgb(255, 215, 0);
+}
+
+#bosch a:hover {
+    color: white;
+}
+
+#ideas3 li {
+    color: black;
+}
+
+#ideas3 a:hover {
+    color: grey;
+}
+
+#snowflake,
+#snowflake g {
+    color: #00bdff;
+    fill: #00bdff;
+}
+
+#snowflake a,
+#snowflake a:visited,
+#snowflake a:active,
+#snowflake text {
+    color: white;
+    fill: #00bdff;
+}
+
+#snowflake a:hover {
+    color: lightgrey;
+}
+
+#schunk,
+#schunk g {
+    color: black;
+    fill: black;
+}
+
+#schunk a,
+#schunk a:visited,
+#schunk a:active,
+#schunk text {
+    color: #102090;
+    fill: #102090;
+}
+
+#schunk a:hover {
+    color: grey;
+}
+
+#teams a:hover {
+    color: white;
+}
+
+#teams i {
+    color: white;
+}
+
+#lapp,
+#lapp g {
+    color: white;
+    fill: white;
+}
+
+#lapp a,
+#lapp a:visited,
+#lapp a:active,
+#lapp text {
+    color: #FE9020;
+    fill: #FE9020;
+}
+
+#lapp a:hover {
+    color: grey;
+}
+
+#haniel,
+#haniel g {
+    color: grey;
+    fill: white;
+}
+
+#haniel a,
+#haniel a:visited,
+#haniel a:active,
+#haniel h2,
+#haniel text {
+    color: white;
+    fill: white;
+}
+
+#haniel a:hover {
+    color: grey;
+}
+
+#outro,
+#outro g {
+    color: white;
+    fill: #e63c66;
+}
+
+#outro a,
+#outro a:visited,
+#outro a:active,
+#outro h2,
+#outro text {
+    color: #e63c66;
+    fill: white;
+}
+
+#outro a:hover {
+    color: black;
+}
