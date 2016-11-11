@@ -33,7 +33,7 @@ h1 {
 
 h2 {
 	text-align: center;
-	margin-bottom:30px;
+	margin-bottom:15px;
 }
 
 h3 {
@@ -241,18 +241,16 @@ text {
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .fill {
-        height: 100%;
-        width: auto;
-    }
-    .label {
-        /*text-align: center;*/
+    .center iframe {
+		margin:10px auto;
+		display: block;
     }
 }
 
 @media (max-width: 780px) {
-    html {
-        font-size: 13px;
+    .center iframe {
+		margin:10px auto;
+		display: block;
     }
 }
 
@@ -272,7 +270,7 @@ text {
 }
 
 .draw {
-	width: 100%;
+	width: 80%;
     overflow: visible;
 	-moz-transform: translate(-100px, -120px);
 }
