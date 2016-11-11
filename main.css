@@ -26,6 +26,12 @@ body {
 	max-width: 590px;
 }
 
+
+h2 {
+	text-align: center;
+	margin-bottom:30px;
+}
+
 h4 {
 	text-align: center;
 	margin-bottom:10px;
