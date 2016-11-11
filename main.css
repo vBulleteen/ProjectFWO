@@ -47,18 +47,6 @@ h4 {
 }
 
 
-
-svg {
-    z-index: 4;
-    position: absolute;
-    min-width: 28rem;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -245,7 +233,28 @@ text {
     justify-content: center;*/
 }
 
+@media (min-aspect-ratio: 16/9) {
+    .fill {
+        width: 100%;
+        height: auto;
+    }
+}
 
+@media (max-aspect-ratio: 16/9) {
+    .fill {
+        height: 100%;
+        width: auto;
+    }
+    .label {
+        /*text-align: center;*/
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 13px;
+    }
+}
 
 
 
