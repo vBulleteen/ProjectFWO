@@ -37,6 +37,238 @@ h4 {
 	margin-bottom:10px;
 }
 
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 auto 0 0;
+    line-height: 1.4;
+}
+
+svg {
+    z-index: 4;
+    position: absolute;
+    min-width: 28rem;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li.active a {
+    color: white;
+}
+
+li a:hover {
+    color: white;
+}
+
+p {
+    margin: 0 auto 0 0;
+    line-height: 1.2;
+}
+
+i {
+    color: grey;
+}
+
+#body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+}
+
+.label {
+    margin: 1.5rem;
+    max-width: 400px;
+    z-index: 4;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.toplabel {
+    z-index: 3;
+    position: relative;
+    bottom: auto;
+    right: 0px;
+    text-align: right;
+    font-size: 1.2rem;
+    top: 0px;
+}
+
+#navigation {
+    margin: 1.5rem;
+    right: 0px;
+}
+
+#logo {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    width: 15rem;
+    z-index: 3;
+}
+
+.info {
+    padding-top: 1%;
+    color: grey;
+    font-size: 1.6rem;
+    /*font-style: italic;*/
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: grey;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a.blank,
+a.blank:visited,
+a.blank:active,
+a.blank:hover {
+    color: inherit!important;
+    font-weight: inherit!important;
+    text-decoration: inherit!important;
+}
+
+video {
+    opacity: 0.4;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+}
+
+.active video {
+    opacity: 1.0;
+}
+
+img {
+    opacity: 0.4;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+}
+
+.active img {
+    opacity: 1.0;
+}
+
+text {
+    font-family: 'Loved by the King', cursive;
+    font-size: 45px;
+    fill: grey;
+    -webkit-clip-path: inset(0 100% 0 0);
+    -moz-clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
+    /*opacity: 0.4;*/
+    -webkit-transition: 0.3s ease-out 0.5s;
+    -moz-transition: 0.3s ease-out 0.5s;
+    -ms-transition: 0.3s ease-out 0.5s;
+    -o-transition: 0.3s ease-out 0.5s;
+    transition: 0.3s ease-out 0.5s;
+    /*-webkit-transform: translate(-0.5em,0);
+    -moz-transform: translate(-0.5em,0);
+    -o-transform: translate(-0.5em,0);
+    -ms-transform: translate(-0.5em,0);
+    transform: translate(-0.5em,0);*/
+}
+
+.active text {
+    /*-webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);*/
+    -webkit-clip-path: inset(0 0 0 0);
+    -moz-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+}
+
+.fill {
+    position: absolute;
+    z-index: 0;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.fill.left {
+    /*left:0;*/
+    /*align-self: flex-start;*/
+}
+
+.fill.right {
+    /*right:0;*/
+    /*align-self: flex-end;*/
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid white;
+    box-sizing: border-box;
+    /*scroll-snap-type: mandatory;*/
+    /*scroll-snap-align:none start;*/
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fill {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fill {
+        height: 100%;
+        width: auto;
+    }
+    .label {
+        /*text-align: center;*/
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+
+
+
 @media (max-width: 600px) {
 	.center iframe {
 		margin:10px auto;
